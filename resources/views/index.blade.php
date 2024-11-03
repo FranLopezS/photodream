@@ -47,7 +47,7 @@
 
 <body class="bg-cyan-50">
     <header class="flex flex-col justify-center items-center min-w-max  p-2">
-        <h1 class="font-semibold text-5xl sm:text-6xl text-[#2e6c93] bg-[#ffffff94] rounded-md"
+        <h1 class="font-semibold text-5xl sm:text-6xl text-[#2e6c93]"
             style="font-family: Cinzel;">
             Photodream
         </h1>
