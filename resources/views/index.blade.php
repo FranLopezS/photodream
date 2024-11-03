@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <meta name="title" content="Photodream" />
+    <meta name="description" content="Find the images you are dreaming about." />
+    <meta name="keywords" content="Images, dream, search, unsplash">
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content='https://photodream.fly.dev/' />
+    <meta property="og:title" content="Photodream" />
+    <meta property="og:description" content="Find the images you are dreaming about." />
+    <meta property="og:image" content={{ asset('logotipo.jpeg') }} />
+
     @vite('resources/css/app.css')
     @livewireScripts
     <title>Photodream</title>
