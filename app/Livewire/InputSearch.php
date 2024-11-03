@@ -22,6 +22,7 @@ class InputSearch extends Component
         ]);
         
         if($this->text == "") {
+            $this->images = [];
             $this->dispatch('emptyChanged');
             return;
         }

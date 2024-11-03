@@ -11,16 +11,10 @@
         :root {
             --main-width-item: 20%;
         }
-
-        /* fluid 5 columns */
+        
         .grid-sizer,
         .grid-item {
             width: var(--main-width-item);
-        }
-
-        /* 2 columns */
-        .grid-item--width2 {
-            width: 40%;
         }
 
         .grid-item {
@@ -29,11 +23,6 @@
 
         .grid-masonry {
             margin: 0 auto;
-            width: 1500px;
-        }
-
-        body {
-            background: fixed url({{ asset('fondo.jpg')}});
         }
 
         @font-face {
@@ -47,8 +36,8 @@
         }
 
         dialog::backdrop {
-            background-color: black;
-            opacity: 0.9;
+            background-color: #ecfeff;
+            opacity: 1;
         }
     </style>
     <script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
@@ -57,20 +46,18 @@
 
 <body class="bg-cyan-50">
     <header class="flex flex-col justify-center items-center min-w-max  p-2">
-        <h1 class="font-semibold text-5xl sm:text-6xl text-[#4f1340] bg-[#ffffff94] rounded-md"
+        <h1 class="font-semibold text-5xl sm:text-6xl text-[#2e6c93] bg-[#ffffff94] rounded-md"
             style="font-family: Cinzel;">
             Photodream
         </h1>
-        <h2 class="font-thin text-2xl text-[#ffffff] sm:text-[#534a38]" style="font-family: DancingScript;">
+        <h2 class="font-thin text-2xl text-[#2d7c8e]" style="font-family: DancingScript;">
             If you can imagine it, it's here
         </h2>
     </header>
     <main>
-        <div class="flex justify-center">
-            <livewire:input-search />
-        </div>
+        <livewire:input-search />
         <dialog id="modal_loading" class="modal bg-transparent">
-            <img src="{{ asset('loading.gif') }}" alt="Loading" />
+            <img src="{{ asset('loading.gif') }}" alt="Loading" style="cursor: crosshair;" />
         </dialog>
     </main>
     <footer>
@@ -78,7 +65,7 @@
     </footer>
     <script>
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            document.documentElement.style.cssText = "--main-width-item: 50%";
+            document.documentElement.style.cssText = "--main-width-item: 99%";
         }
     </script>
 </body>
